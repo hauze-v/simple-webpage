@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* CSS Variables for Colors */
+:root {
+  --main-bg-color: #2C2C24;
+  --navigation-bg-color: #B84901;
+  --article-bg-color: #B5C0C4;
+  --text-color: #3E442D;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+header {
+  height: 100px;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--article-bg-color);
+}
+.app__container {
+  width: 70%;
+  margin:  0 auto;
+}
+/* --- Typography --- */
+
+h1, h2, h3 {
+  font-family: 'Raleway', cursive;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+#sidebar {
+  color: var(--article-bg-color);
+}
+
+p, input, li {
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--article-bg-color);
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* --- Header Layout --- */
+
+nav, article, aside, footer {
+  background-color: var(--article-bg-color);
+  padding: 1%;
+}
+
+nav {
+  height: 75px;
+  background-color: var(--navigation-bg-color);
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: var(--article-bg-color);
+  border: 0;
+  color: var(--text-color);
+}
+
+/* --- Main Layout --- */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: var(--navigation-bg-color);
+}
+
+aside li {
+  padding-bottom: 10px;
+  list-style: none;
+}
+aside li a {
+  text-decoration: none;
+  color: var(--article-bg-color);
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+}
